@@ -1,7 +1,17 @@
 import React from 'react'
+import Image from 'gatsby-image'
 
-const RoomPreview = () => {
-  return <p>desde habitacion</p>
+const RoomPreview = ({ room }) => {
+  const { image, content, title, slug } = room
+  return (
+    <div>
+      <Image fluid={image.fluid} />
+      <div>
+        <h3>{title}</h3>
+        <p>{content}</p>
+      </div>
+    </div>
+  )
 }
 
 export default RoomPreview
