@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Global, css } from '@emotion/core'
 import Header from './header'
+import Footer from './footer'
 
 const Layout = props => {
   return (
@@ -9,7 +10,7 @@ const Layout = props => {
       <Global
         styles={css`
           html {
-            font-size: 62.5%;
+            font-size: 60%;
             box-sizing: border-box;
           }
           *,
@@ -19,9 +20,9 @@ const Layout = props => {
           }
           body {
             font-size: 18px;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             line-height: 1.5;
-            font-family: 'PT Sans', sans-serif;
+            font-family: 'Noto Sans', sans-serif;
           }
           h1,
           h2,
@@ -34,7 +35,7 @@ const Layout = props => {
             font-family: 'Roboto', serif;
           }
           h3 {
-            font-family: 'PT Sans', sans-serif;
+            font-family: 'Noto Sans', sans-serif;
           }
           ul {
             list-style: none;
@@ -51,12 +52,13 @@ const Layout = props => {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:wght@700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap&family=Roboto:wght@700&display=swap"
           rel="stylesheet"
         />
       </Helmet>
       <Header />
       {props.children}
+      <Footer />
     </>
   )
 }
