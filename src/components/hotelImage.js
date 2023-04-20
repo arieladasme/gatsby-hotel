@@ -52,7 +52,7 @@ const HotelImage = () => {
     <BckgrndImg tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextImage>
         <h1>Bienvenido a Gatsby Hotel</h1>
-        <p>De choro</p>
+        <p>Disfruta de los mejores Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín</p>
       </TextImage>
     </BckgrndImg>
   )
